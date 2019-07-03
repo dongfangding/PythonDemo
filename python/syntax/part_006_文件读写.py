@@ -61,12 +61,14 @@ def read_write_file(path, mode, encoding='utf-8'):
         file.write('我们都有一个家，名字叫中国'.encode('utf-8'))
 
 
-"""
-将复杂数据类型序列化成json存储到文件中，然后再反序列化回来
-"""
-
-
 def serial_json(path, mode='r+', encoding='utf-8'):
+    """
+    将复杂数据类型序列化成json存储到文件中，然后再反序列化回来
+    :param path:
+    :param mode:
+    :param encoding:
+    :return:
+    """
     print("====================json序列化==================")
     # 将复杂的格式dump到text file对象中去,mode='r+'标识以追加的方式往里面写内容，也就是写到最后
     with open(path, mode=mode, encoding=encoding) as file:

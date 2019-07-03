@@ -13,16 +13,26 @@ def main():
     print(1, 3, 5)
 
 
-# 定义一个可变参数的函数
 def add(*args):
+    """
+    定义一个可变参数的函数
+    :param args:
+    :return:
+    """
     total = 0
     for arg in args:
         total += arg
     return total
 
 
-# 定义一个含有默认值的函数，可以直接传参，如果不传使用默认值
 def divide(a=0, b=0, c=0):
+    """
+    定义一个含有默认值的函数，可以直接传参，如果不传使用默认值
+    :param a:
+    :param b:
+    :param c:
+    :return:
+    """
     return a * b * c
 
 
